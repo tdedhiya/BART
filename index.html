@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="index.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/datejs/1.0/date.min.js"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB3PrPhxDdHUqHKAigmi8FFXUlpktLm2nY&callback=initMap"></script>
+<script src="jquery.countdown.js"></script>
+<script src="jslogic.js"></script>
+    <title>BART Web Application</title>
+</head>
+<body onload="getStations()">
+        <header>
+                <h1 id="headerName">BART Web-Application</h1>
+        </header>
+    <div class="mainDiv">
+            <div id="myModal" class="modal">
+
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                      <span class="close">&times;</span>
+                      <p id="modalText">afsd</p>
+                    </div>
+                  
+                  </div>
+        <section class="select-stations">
+                <h3>Select your Departure and Arrival Station to get list of departing trains.</h3>
+                <div>
+                    <h3>Departure Station</h3>
+                    <select class="dropdown" id="source" onmousedown="if(this.options.length>8){this.size=8;}" 
+                         onblur="this.size=0;" onchange="ChangeList(this);this.size=0;"></select>
+                </div>
+                <div>
+                    <h3>Arrival Station</h3>
+                    <select class="dropdown" id="destination" onmousedown="if(this.options.length>8){this.size=8;}" 
+                        onchange='this.size=0;' onblur="this.size=0;" disabled></select>
+                </div>
+                <div id="errfn"></div>
+                <button class="submit" id="submit" onclick="getTrains()">Submit</button>
+                <h3>Departure Station info:</h3>
+            <aside id="info"></aside>
+            <h3>The following is the departure time for the next train:</h3>
+            <div id="getting-started"></div>
+        </section>
+        <section class="list-routes">
+            <h3>List of Departing trains with fares will appear here once you select Departure and Arrival stations</h3>
+            <div id="tablediv">
+            </div>
+            <H3>Route from departure to Arrival Station will appear below:</H3>
+            <div id="map"></div>
+        </section>
+    </div>
+   
+</body>
+</html>

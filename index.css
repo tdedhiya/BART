@@ -1,0 +1,174 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+        margin-left: 50px;
+        margin-right: 50px;
+        background-color: #efefef;
+    }
+    header{
+        background-color: #01010d;
+        text-align: center;
+        color: white;
+        border-radius: 10px;  
+        margin-bottom: -10px;
+    margin-top: -10px;
+    }
+
+    #headerName{
+        padding:10px;
+    }
+    .select-stations{
+        padding-left: 15px;
+        padding-bottom: 20px;
+        width: 35%;
+        float: left;
+        border: 1px solid #dcd7d7;
+        background-color: white;
+        border-radius: 10px;
+    }
+
+    .list-routes {
+        padding-left: 15px;
+        padding-right: 10px;
+        padding-bottom: 20px;
+        height: 80%;
+        width: calc(100% - 35% - 60px);
+        float: left;
+        border: 1px solid #dcd7d7;
+        background-color: white;
+        border-radius: 10px;
+        margin-left: 15px;
+    }
+
+    .dropdown {
+        background-color: #0aa65d;
+        color: white;
+        max-height: 250px;
+        cursor: pointer;
+    }
+
+    .dropdown option {
+        padding: 10px;
+    }
+
+    .dropdown option:hover, option:focus, option:active, option:checked{
+        background: #004b9c;
+        color: white;
+    }
+
+    .dropdown:disabled { 
+        background-color: white;
+        color:black;
+        cursor:not-allowed; }
+
+    select:-internal-list-box {
+        height:100px !important;
+    }
+
+    .submit {
+        margin-top: 20px;
+        padding: 10px;
+        width: 100px;
+        height: 35px;
+        color: white;
+        border-radius: 25px;
+        background-color: #cf4a5c;
+    }
+
+    button:active {
+        outline: none;
+        background-color: #4CAF50;
+    }
+
+    td, th {
+        border: 1px solid #ddd;
+        padding: 8px;
+    }
+    
+     tr:nth-child(even){background-color: #f2f2f2;}
+    
+     tr:hover {background-color: #ddd;}
+
+    th {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: left;
+        background-color: #4CAF50;
+        color: white;
+    }
+
+    #map {
+        height: 250px !important;
+        width: 100%;
+    }
+
+    .modal {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        padding-top: 100px; /* Location of the box */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    }
+    
+    /* Modal Content */
+    .modal-content {
+        background-color: #fefefe;
+        margin: auto;
+        padding: 20px;
+        border: 1px solid #888;
+        border-radius: 15px;
+        width: 30%;
+    }
+    
+    /* The Close Button */
+    .close {
+        color: #aaaaaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+        margin-top: 10px;
+    }
+    
+    .close:hover,
+    .close:focus {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    .footer{
+        background-color: #b52f41;
+        color: white;
+        margin-top: 10px;
+        border-radius: 10px;
+        padding: 5px;
+        padding-left: 15px;
+        padding-top: 5px;
+     }
+
+     .mainDiv{
+        display: inline-block;
+     }
+
+html { height: 100% };
+body { height: 100%; margin: 0; padding: 0 };
+
+#getting-started{
+    background-color: #4ac0e9;
+    padding: 10px;
+    width: 250px;
+    color: white;
+    font-size: 20px;
+}
+
+#errfn{
+    color: red;
+    margin-top: 10px;
+    margin-bottom: -10px;
+    font-size: 20px;
+}
